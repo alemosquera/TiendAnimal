@@ -1,0 +1,77 @@
+.portada{
+    width: 1000px;
+    height: 300px;
+    padding: float;
+    background-image: url(../IMG/fondohuellas2.jpg);
+    float:left;
+
+    
+
+}
+
+.estilodetexto{
+    width: 1000px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -300px;
+    padding: 0 35px 0 35px;
+    float:left;
+    text-align: justify;
+
+}
+
+
+body{
+    background-image: url(../IMG/fondohuellas2.jpg);
+    
+
+}
+
+.titulito{
+    text-align: left;
+    padding-left: 0px;
+    float:left;
+
+
+}
+.recom{
+    padding-left: 30px;
+    width: 600px;
+    float:left;
+    margin-top: -750px;
+    
+
+} 
+.img-fluid{
+   
+    width: 200px;
+    height: 150px;
+}
+
+.img-fluid:hover {filter: grayscale(80%);}
+
+.containerDerecha{
+    width: 200px;
+    height: 800px;
+    float: right;
+    border-style: outset;
+    border-color: black;
+    border-width: 1px;
+    padding-right: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    filter: drop-shadow(10px 10px 10px #444);
+}
+   
+
+.containerDerecha{
+
+    text-shadow: 2px 2px 0 #AAA;
+    filter: drop-shadow(10px 10px 10px #444);
+}
+
+.imagenComida{
+text-align: center;
+size: small;
+padding: 10px 20px 10px 40px;
+margin-top: 0em;
+}
