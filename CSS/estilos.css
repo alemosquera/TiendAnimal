@@ -8,7 +8,6 @@
     
 
 }
-
 .estilodetexto{
     width: 1000px;
     
@@ -19,19 +18,9 @@
     text-align: justify;
 
 }
-
-
 body{
     background-image: url(../IMG/fondohuellas2.jpg);
     
-
-}
-
-.titulito{
-    text-align: left;
-    padding-left: 0px;
-    float:left;
-
 
 }
 .recom{
@@ -39,11 +28,8 @@ body{
     width: 600px;
     float:left;
     margin-top: -750px;
-    
-
 } 
 .img-fluid{
-   
     width: 200px;
     height: 150px;
 }
@@ -64,7 +50,6 @@ body{
    
 
 .containerDerecha{
-
     text-shadow: 2px 2px 0 #AAA;
     filter: drop-shadow(10px 10px 10px #444);
 }
