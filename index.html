@@ -37,9 +37,32 @@
         .card {
             box-shadow: 3px 3px 5px #999;
         }
+        /*         
+        .madera {
+            background-image: url(IMG/cuchara.jpg);
+            background-repeat: no-repeat;
+        }
         
-        .fondomadera {
-            background-image: url('IMG/fondomadera.jpg');
+        .cartas {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 40px;
+        } */
+        
+        .madera {
+            height: 300px;
+            width: 1225px;
+            text-align: right;
+            background-image: url(IMG/cuchara.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: right;
+        }
+        
+        .carta {
+            height: 50px;
+            width: 400px;
+            text-align: right;
         }
     </style>
 </head>
@@ -146,7 +169,7 @@
 
         <div class="card-deck">
             <div class="card">
-                <img class="card-img-top" src="IMG/reparto.jpg" alt="Card image cap ">
+                <img class="card-img-top img-thumbnail " src="IMG/reparto.jpg" alt="Card image cap ">
                 <div class="card-body text-center  ">
                     <h5 class="card-title">Disfrutamos cada entrega</h5>
                     <p class="card-text-center">No nos detiene ni la lluvia, ni la crisis ni la Pandemia. Lo pedis? te lo llevamos..</p>
@@ -159,34 +182,33 @@
                         <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Mapa de entrega</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                      </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="IMG/mapa.jpg">
+                                    <img class="img" alt="Responsive image" src="IMG/mapa.jpg" width="450px">
                                 </div>
                                 <div class="modal-footer">
 
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
                     <p class="card-text-center"><small class="text-muted">Aceptamos todos los medios de pago</small></p>
                 </div>
             </div>
+
+
+
             <div class="card">
                 <img class="card-img-top" src="IMG/musicmasamplia.jpg" alt="Card image cap">
                 <div class="card-body text-center">
                     <h5 class="card-title">Musica para sus oídos</h5>
-                    <p class="card-text-center">Sabias que luego de muchos estudios realizados, hay dos estilos musicales mas elegidos por todos los perros? </p>
+                    <p class="card-text-center">Sabias que luego de muchos estudios realizados, hay dos estilos musicales mas elegidos por los perros? </p>
 
                     <!-- Button trigger modal -->
 
@@ -220,8 +242,11 @@
                     <p class="card-text-center"><small class="text-muted">Estudio realizado por la Universidad de Glasgow y la Asociación Protectora Scotland's Animal Welfare Charity</small></p>
                 </div>
             </div>
+
+
+
             <div class="card">
-                <img class="card-img-top" src="IMG/gracias.jpg" alt="Card image cap">
+                <img class="card-img-top img-thumbnail " src="IMG/gracias.jpg" alt="Card image cap">
                 <div class="card-body text-center ">
                     <h5 class="card-title">Más regalos para vos!</h5>
                     <p class="card-text-center">Nos encanta verte Feliz, por eso todos los meses Tiendanimal te puede sorprender en la puerta de tu casa </p>
@@ -229,7 +254,7 @@
                     <!-- Button trigger modal -->
 
                     <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#participa">
-                     Dale click y enterate!
+                     Mas info !
                     </button>
                     <div class="modal fade" id="participa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -263,7 +288,7 @@
 
 
 
-                    <p class="card-text-center"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text-center"><small class="text-muted">Actualizado hace minutos</small></p>
                 </div>
             </div>
         </div>
@@ -272,233 +297,202 @@
     </br>
     </br>
     </br>
-    <div class="fondomadera container">
-        <div id="imagencargando" class="container ">
-
-        </div>
-    </div>
     </br>
-    </br>
-    </br>
-
-    <!-- GALERIA DE FOTOS CON bootstrap -->
     <div class="container">
-
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Sos amante de los Perros?</h1>
-                <h3 class="btn-warning float-rigth text-center"> ADOPTÁ HOY !</h3>
-            </div>
+        <div class="text-center">
+            <img src="IMG/zapato.jpg" class="img-fluid" alt="Responsive image">
         </div>
-
     </div>
-
-
+    </br>
+    </br>
+    </br>
+    </br>
+    <!-- cartas con alimentos en oferta -->
 
     <div class="container">
-
-        <div class="row">
-            <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-                <div class="row h-50">
-                    <div class="col-md-12 col-sm-12 co-xs-12 gal-item">
-                        <div class="box">
-                            <img src="IMG/ado.jpg" class="img-ht img-fluid rounded">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row h-50">
-                    <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
-                        <div class="box">
-                            <img src="IMG/999.jpg" class="img-ht img-fluid rounded">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 co-xs-12 gal-item">
-                        <div class="box">
-                            <img src="IMG/darin.jpg" class="img-ht img-fluid rounded">
-                        </div>
-                    </div>
-                </div>
+        <div class="card mb-3">
+            <img src="IMG/cuchara.jpg" class=" card-img-top img-thumbnail" alt="... ">
+            <div class="card-body ">
+                <h5 class="card-title ">Sieger Premium</h5>
+                <p class="card-text ">Para los más exigentes Tiendanimal presenta la linea completa de Sieger. Un balanceado con un grado elevado de proteinas y bajo en grasas lo transforma en una de las opciones de mas alta calidad del mercado.</p>
+                <p class="card-text "><small class="text-muted ">Consulta y asesoramiento sin cargo</small></p>
             </div>
-
-            <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                <div class="col-md-12 col-sm-6 co-xs-12 gal-item h-25">
-                    <div class="box">
-                        <img src="IMG/777.jpg" class="img-ht img-fluid rounded">
-                    </div>
-                </div>
-
-                <div class="col-md-12 col-sm-6 co-xs-12 gal-item h-75">
-                    <div class="box">
-                        <img src="IMG/abrazo1.jpg" class="img-ht img-fluid rounded">
-                    </div>
-                </div>
-            </div>
-
         </div>
-        <br/>
-        </br>
+    </div>
+    <div class="container">
+        <div class="card mb-3">
+            <img src="IMG/fondoverdura.jpg" class=" card-img-top img-thumbnail" alt="... ">
+            <div class="card-body ">
+                <h5 class="card-title ">Hop Nuevo !</h5>
+                <p class="card-text">Este mes tenemos en OFERTA uno de los alimentos mas nuevos del mercado, fabricado 100% con productos naturales y altisimo en Proteínas. HOP! lo bueno es simple... No te lo pierdas!!</p>
+                <p class="card-text "><small class="text-muted ">Consultas y asesoramiento sin cargo</small></p>
+            </div>
+        </div>
+    </div>
 
-        <!--empieza el Footer-->
-        <footer class="page-footer font-small blue-grey lighten-5">
 
-            <div style="background-color: #d1b721;">
-                <div class="container">
 
-                    <!-- Grid row-->
-                    <div class="row py-4 d-flex align-items-center">
 
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                            <h6 class="mb-0">Contactanos en nuestras redes sociales!</h6>
-                        </div>
-                        <!-- Grid column -->
 
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+    <!--empieza el Footer-->
+    <footer class="page-footer font-small blue-grey lighten-5 ">
 
-                            <!-- Facebook -->
-                            <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/tiendanimalMDP/">
-                                <i class="fab fa-facebook-f white-text mr-4"> </i>
-                            </a>
-                            <!-- Twitter -->
-                            <a class="tw-ic">
-                                <i class="fab fa-twitter white-text mr-4"> </i>
-                            </a>
-                            <!-- Google +-->
-                            <a class="gplus-ic">
-                                <i class="fab fa-google-plus-g white-text mr-4"> </i>
-                            </a>
-                            <!--Linkedin -->
-                            <a class="li-ic">
-                                <i class="fab fa-linkedin-in white-text mr-4"> </i>
-                            </a>
-                            <!--Instagram-->
-                            <a class="ins-ic">
-                                <i class="fab fa-instagram white-text"> </i>
-                            </a>
+        <div style="background-color: #d1b721; ">
+            <div class="container ">
 
-                        </div>
-                        <!-- Grid column -->
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center ">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0 ">
+                        <h6 class="mb-0 ">Contactanos en nuestras redes sociales!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right ">
+
+                        <!-- Facebook -->
+                        <a class="btn-floating btn-fb mx-1 " href="https://www.facebook.com/tiendanimalMDP/ ">
+                            <i class="fab fa-facebook-f white-text mr-4 "> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic ">
+                            <i class="fab fa-twitter white-text mr-4 "> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic ">
+                            <i class="fab fa-google-plus-g white-text mr-4 "> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic ">
+                            <i class="fab fa-linkedin-in white-text mr-4 "> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic ">
+                            <i class="fab fa-instagram white-text "> </i>
+                        </a>
 
                     </div>
-                    <!-- Grid row-->
+                    <!-- Grid column -->
 
                 </div>
-            </div>
+                <!-- Grid row-->
 
-            <!-- Footer Links -->
-            <div class="container text-center text-md-left mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3 dark-grey-text">
-                    <!-- Grid column -->
-                    <div class="col-sm-12 col-md-3 col-lg-4 col-xl-3 mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase font-weight-bold">Somos una Compañia Familiar</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>TiendAnimal nació con el objetivo de cubrir las necesidades de nuestros pequeños y revoltosos amigos. Un proyecto Familiar que gracias a vos, mejora dia tras dia el bienestar y la alimentacion de cada mascota Argentina. </p>
-                    </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase font-weight-bold">Productos</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>
-                            <a class="dark-grey-text" href="#!">Alimentos</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Servicios</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Traslados</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Donaciones</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase font-weight-bold">Links útiles</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>
-                            <a class="dark-grey-text" href="#!">Tu cuenta</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Transformate en afiliado</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Precios de envíos</a>
-                        </p>
-                        <p>
-                            <a class="dark-grey-text" href="#!">Ayuda</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase font-weight-bold">Contacto</h6>
-                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                        <p>
-                            <i class="fas fa-home mr-3"></i>Mar de Plata, CP 7600, Bs As, ARG</p>
-                        <p>
-                            <i class="fas fa-envelope mr-3"></i>Tiendanimal@gmail.com</p>
-                        <p>
-                            <i class="fas fa-phone mr-3"></i> + 5492235261121</p>
-                        <p>
-                            <i class="fas fa-print mr-3"></i> + 5492235261121</p>
-                    </div>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5 ">
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text ">
+                <!-- Grid column -->
+                <div class="col-sm-12 col-md-3 col-lg-4 col-xl-3 mb-4 ">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold ">Somos una Compañia Familiar</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px; ">
+                    <p>TiendAnimal nació con el objetivo de cubrir las necesidades de nuestros pequeños y revoltosos amigos. Un proyecto Familiar que gracias a vos, mejora dia tras dia el bienestar y la alimentacion de cada mascota Argentina. </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold ">Productos</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px; ">
+                    <p>
+                        <a class="dark-grey-text " href="#! ">Alimentos</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text " href="#! ">Servicios</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text " href="#! ">Traslados</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text " href="#! ">Donaciones</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold ">Links útiles</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px; ">
+                    <p>
+                        <a class="dark-grey-text " href="#! ">Tu cuenta</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text " href="#! ">Transformate en afiliado</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text " href="#! ">Precios de envíos</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text " href="#! ">Ayuda</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold ">Contacto</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto " style="width: 60px; ">
+                    <p>
+                        <i class="fas fa-home mr-3 "></i>Mar de Plata, CP 7600, Bs As, ARG</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3 "></i>Tiendanimal@gmail.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3 "></i> + 5492235261121</p>
+                    <p>
+                        <i class="fas fa-print mr-3 "></i> + 5492235261121</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Copyright -->
-            <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
-                <a class="dark-grey-text" href="https://mdbootstrap.com/">Mosquera WebDesign</a>
-            </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-black-50 py-3 ">© 2020 Copyright:
+            <a class="dark-grey-text " href="https://mdbootstrap.com/ ">Mosquera WebDesign</a>
+        </div>
 
-        </footer>
-        <!-- aca termina el Footer -->
+    </footer>
+    <!-- aca termina el Footer -->
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
 
-        <div class="btn-dark text-center">
+    <div class="btn-dark text-center ">
 
-            <script>
-                $(function() {
-                    var selectedClass = "";
-                    $(".filter").click(function() {
-                        selectedClass = $(this).attr("data-rel");
-                        $("#gallery").fadeTo(100, 0.1);
-                        $("#gallery div").not("." + selectedClass).fadeOut().removeClass('animation');
-                        setTimeout(function() {
-                            $("." + selectedClass).fadeIn().addClass('animation');
-                            $("#gallery").fadeTo(300, 1);
-                        }, 300);
-                    });
+        <script>
+            $(function() {
+                var selectedClass = " ";
+                $(".filter ").click(function() {
+                    selectedClass = $(this).attr("data-rel ");
+                    $("#gallery ").fadeTo(100, 0.1);
+                    $("#gallery div ").not(". " + selectedClass).fadeOut().removeClass('animation');
+                    setTimeout(function() {
+                        $(". " + selectedClass).fadeIn().addClass('animation');
+                        $("#gallery ").fadeTo(300, 1);
+                    }, 300);
                 });
-            </script>
+            });
+        </script>
 
-            <script>
-                var ran
-                ran = Math.round(Math.random() * 1000)
-                document.write("Usted es el visitante " + ran + " de esta página.")
-            </script>
+        <script>
+            var ran
+            ran = Math.round(Math.random() * 1000)
+            document.write("Usted es el visitante " + ran + " de esta página. ")
+        </script>
 
-            <script type="text/javascript">
-                function imagen() {
-                    imagen = '<img src="IMG/mapa.jpg" alt="cargando..." />'
-                    document.getElementById('imagencargando').innerHTML = imagen;
-                }
-            </script>
+        <script type="text/javascript ">
+            function imagen() {
+                imagen = '<img src="IMG/mapa.jpg " alt="cargando... " />'
+                document.getElementById('imagencargando').innerHTML = imagen;
+            }
+        </script>
 
 
-        </div>
+    </div>
 
 </body>
 
