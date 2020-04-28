@@ -37,32 +37,9 @@
         .card {
             box-shadow: 3px 3px 5px #999;
         }
-        /*         
-        .madera {
-            background-image: url(IMG/cuchara.jpg);
-            background-repeat: no-repeat;
-        }
         
-        .cartas {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            padding-left: 40px;
-        } */
-        
-        .madera {
-            height: 300px;
-            width: 1225px;
-            text-align: right;
-            background-image: url(IMG/cuchara.jpg);
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: right;
-        }
-        
-        .carta {
-            height: 50px;
-            width: 400px;
-            text-align: right;
+        .card-text {
+            height: auto;
         }
     </style>
 </head>
@@ -83,7 +60,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Alimentos</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Perros</a>
+                            <a href="./consejos.html" target="_blank" class="dropdown-item">Perros</a>
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item">Gatos</a>
                             <div class="dropdown-divider"></div>
@@ -155,7 +132,9 @@
             </p>
         </div>
     </div>
-
+    <div class="container">
+        <button onclick="window.open('consejos.html')" target="_blank" class="btn btn-outline-primary btn-block">Mas consejos</a>
+    </div>
     </br>
     </br>
 
@@ -177,122 +156,120 @@
                     <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#verMapa">
                         Dale click para ver tu zona
                        </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="verMapa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Mapa de entrega</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <!-- Modal -->
+        <div class="modal fade" id="verMapa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mapa de entrega</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                      </button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="img" alt="Responsive image" src="IMG/mapa.jpg" width="450px">
-                                </div>
-                                <div class="modal-footer">
-
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <p class="card-text-center"><small class="text-muted">Aceptamos todos los medios de pago</small></p>
-                </div>
-            </div>
-
-
-
-            <div class="card">
-                <img class="card-img-top" src="IMG/musicmasamplia.jpg" alt="Card image cap">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Musica para sus oídos</h5>
-                    <p class="card-text-center">Sabias que luego de muchos estudios realizados, hay dos estilos musicales mas elegidos por los perros? </p>
-
-                    <!-- Button trigger modal -->
-
-
-                    <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#exampleModal">
-                     Dale click y enterate!
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Y la respuesta es...</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    Los Perros eligieron al REGGAE y al JAZZ como sus preferidos. </br> Por supuesto siempre haciendolos escuchar a volumenes bajos, ya que su capacidad auditiva es muchisimo mas aguda que la nuestra. Proba en casa y contanos
-                                    :)
-                                    <!DOCTYPE html>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-
-                                </div>
-                            </div>
-                        </div>
+                    <div class="modal-body">
+                        <img class="img" alt="Responsive image" src="IMG/mapa.jpg" width="450px">
                     </div>
-                    <p class="card-text-center"><small class="text-muted">Estudio realizado por la Universidad de Glasgow y la Asociación Protectora Scotland's Animal Welfare Charity</small></p>
-                </div>
-            </div>
+                    <div class="modal-footer">
 
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
-
-            <div class="card">
-                <img class="card-img-top img-thumbnail " src="IMG/gracias.jpg" alt="Card image cap">
-                <div class="card-body text-center ">
-                    <h5 class="card-title">Más regalos para vos!</h5>
-                    <p class="card-text-center">Nos encanta verte Feliz, por eso todos los meses Tiendanimal te puede sorprender en la puerta de tu casa </p>
-
-                    <!-- Button trigger modal -->
-
-                    <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#participa">
-                     Mas info !
-                    </button>
-                    <div class="modal fade" id="participa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Seguinos en FACEBOOK...</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body text-left">
-
-                                    Con tu primer compra participas del sorteo mensual por:
-                                    <ul>
-                                        <li>Una bolsa de alimentos</li>
-                                        <li>Un menú GRATIS para tu pequeño amigo en Torombolo</li>
-                                        <li>Una bolsa de golosinas para perros</li>
-                                        <li>Y muchas cosas más!!</li>
-                                    </ul>
-
-
-                                    <!DOCTYPE html>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
-
-
-                    <p class="card-text-center"><small class="text-muted">Actualizado hace minutos</small></p>
                 </div>
             </div>
         </div>
+        <p class="card-text-center"><small class="text-muted">Aceptamos todos los medios de pago</small></p>
     </div>
+    </div>
+
+
+
+    <div class="card">
+        <img class="card-img-top" src="IMG/musicmasamplia.jpg" alt="Card image cap">
+        <div class="card-body text-center">
+            <h5 class="card-title">Musica para sus oídos</h5>
+            <p class="card-text-center">Sabias que luego de muchos estudios realizados, hay dos estilos musicales mas elegidos por los perros? </p>
+
+            <!-- Button trigger modal -->
+
+
+            <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+                     Dale click y enterate!
+                    </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Y la respuesta es...</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            Los Perros eligieron al REGGAE y al JAZZ como sus preferidos. </br> Por supuesto siempre haciendolos escuchar a volumenes bajos, ya que su capacidad auditiva es muchisimo mas aguda que la nuestra. Proba en casa y contanos :)
+                            <!DOCTYPE html>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="card-text-center"><small class="text-muted">Estudio realizado por la Universidad de Glasgow y la Asociación Protectora Scotland's Animal Welfare Charity</small></p>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <img class="card-img-top img-thumbnail " src="IMG/gracias.jpg" alt="Card image cap">
+        <div class="card-body text-center ">
+            <h5 class="card-title">Más regalos para vos!</h5>
+            <p class="card-text-center">Nos encanta verte Feliz, por eso todos los meses Tiendanimal te puede sorprender en la puerta de tu casa </p>
+
+            <!-- Button trigger modal -->
+
+            <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#participa">
+                     Mas info !
+                    </button>
+            <div class="modal fade" id="participa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Seguinos en FACEBOOK...</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body text-left">
+
+                            Con tu primer compra participas del sorteo mensual por:
+                            <ul>
+                                <li>Una bolsa de alimentos</li>
+                                <li>Un menú GRATIS para tu pequeño amigo en Torombolo</li>
+                                <li>Una bolsa de golosinas para perros</li>
+                                <li>Y muchas cosas más!!</li>
+                            </ul>
+
+
+                            <!DOCTYPE html>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <p class="card-text-center"><small class="text-muted">Actualizado hace minutos</small></p>
+        </div>
+    </div>
+
 
     </br>
     </br>
@@ -307,7 +284,7 @@
     </br>
     </br>
     </br>
-    <!-- cartas con alimentos en oferta -->
+    <!-- aqui comienzan las cartas con alimentos en oferta -->
 
     <div class="container">
         <div class="card mb-3">
@@ -324,8 +301,11 @@
             <img src="IMG/fondoverdura.jpg" class=" card-img-top img-thumbnail" alt="... ">
             <div class="card-body ">
                 <h5 class="card-title ">Hop Nuevo !</h5>
-                <p class="card-text">Este mes tenemos en OFERTA uno de los alimentos mas nuevos del mercado, fabricado 100% con productos naturales y altisimo en Proteínas. HOP! lo bueno es simple... No te lo pierdas!!</p>
-                <p class="card-text "><small class="text-muted ">Consultas y asesoramiento sin cargo</small></p>
+
+                <div class="justify-content-center">
+                    <p class="card-text">Este mes tenemos en OFERTA uno de los alimentos mas nuevos del mercado, fabricado 100% con productos naturales y altisimo en Proteínas. HOP! lo bueno es simple... No te lo pierdas!!</p>
+                    <p class="card-text "><small class="text-muted ">Consultas y asesoramiento sin cargo</small></p>
+                </div>
             </div>
         </div>
     </div>
